@@ -89,7 +89,7 @@ header .navbar-brand{
 
 
 .banner {
-    background: url("../img/banner.jpg") center top no-repeat;
+    background: url("img/banner.jpg") center top no-repeat;
     background-size: cover;
     padding: 150px 0 60px 0;
     position: relative;
