@@ -45,6 +45,7 @@ body {
 header .navbar-brand{
     color: white;
     font-weight: bold;
+    font-size: 25px;
 }
 
 .header {
@@ -60,6 +61,7 @@ header .navbar-brand{
     display: flex;
     justify-content: space-between;
     color: white;
+    font-weight: bold;
 }
 
 .header.sticky  {
@@ -79,14 +81,48 @@ header .navbar-brand{
 .justify-content-end{
     padding-top: 15px;
 }
-.header .menu-icon{
-    display: none;
-    cursor: pointer;
-    padding: 20px;
-    font-size: 20px;
+.header .nav .menubtn{
+    padding: 10px;
 }
 
-
+.header .side-bar{
+    position:fixed;
+    padding: 0;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    backdrop-filter: blur(10px);
+    background-color: rgba(225, 225, 225 ,0.2);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    padding-left:15px;
+    list-style: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    display: none;
+}
+.side-bar a{
+    text-decoration: none;
+    color: #000;
+}
+.side-bar li{
+    justify-content: space-between;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 15px;
+}
+.side-bar .logo{
+    margin: 0;
+    padding-left:0;
+    font-weight: bold;
+    font-size: 25px;
+}
+.side-bar a:hover{
+    color: #1dbf73;
+}
 
 .banner {
     background: url("../img/banner.jpg") center top no-repeat;
@@ -992,6 +1028,9 @@ header .navbar-brand{
     }
     .carousel .carousel-caption{
         padding: 0;
+    }
+    .header .side-bar{
+        display: none;
     }
 }
 

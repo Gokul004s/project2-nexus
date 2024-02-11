@@ -51,10 +51,25 @@
           <li class="nav-item">
             <a class="nav-link" href="contact.html">Contact</a>
           </li>
+          <li class="menubtn" onclick="showSidebar()" >
+            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+          </li>
       </ul>
-      <div class="menu-icon">
-        <i class="bi bi-list"></i>
-      </div>
+
+      <ul class="side-bar">
+        <li class="logo"><img
+            src="logo.png"
+            alt="Logo"
+            width="35"
+            height="35"
+            class="d-inline-block align-text-top"
+          /> NEXUS INFO<svg xmlns="http://www.w3.org/2000/svg" onclick="hideSidebar()" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="service.html">Service</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
     </header>
 
     <section class="carousel">
@@ -655,7 +670,7 @@
             </div>
         </div>
     </footer>
-    <a href="" class="back-to-top" ><i class="bi bi-arrow-up-circle-fill"></i></a>
+    <a href="" class="back-to-top" onclick="backtotop()" ><i class="bi bi-arrow-up-circle-fill"></i></a>
 
     <script src="script.js"></script>
   </body>
